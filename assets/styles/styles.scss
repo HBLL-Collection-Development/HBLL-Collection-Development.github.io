@@ -1,0 +1,153 @@
+---
+---
+$breakpoints: (
+  bp-0: (
+    breakpoint: 0px, // Mobile first
+    font-size: 12px,
+    line-height: 1.5,
+    modular-scale: golden
+  ),
+  bp-1: (
+    breakpoint: 480px, // ~ Extra small screen up
+    font-size: 12px,
+    line-height: 1.5,
+    modular-scale: golden
+  ),
+  bp-2: (
+    breakpoint: 768px, // ~ Small screen/tablet up
+    font-size: 14px,
+    modular-scale: golden // no line-height specified so scale is used
+  ),
+  bp-3: (
+    breakpoint: 992px, // ~ Medium screen up
+    font-size: 16px,
+    modular-scale: golden // no line-height specified so modular-scale is used
+  ),
+  bp-4: (
+    breakpoint: 1200px, // ~Desktop up
+    font-size: 18px,
+    modular-scale: golden // no line-height specified so modular-scale is used
+  )
+) !default;
+
+$base-color: rgb(32, 64, 105); // BYU blue
+$body-color: rgb(63, 63, 63); // Dark gray
+$accent-color: rgb(186, 97, 79); // Orange
+
+$serif-font-family: "Georgia, serif";
+$sans-serif-font-family: "'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+$body-font: unquote($sans-serif-font-family);
+$heading-font: unquote($serif-font-family);
+
+@import "fonts";
+@import "rhythm/src/rhythm";
+
+body {
+  background-color: lighten($body-color, 40%);
+}
+
+h1 {
+  color: $accent-color;
+  @include padding-top(1);
+  @include font-size($h2);
+}
+
+h2 {
+  @include font-size($h3);
+}
+
+h3 {
+  @include font-size($h4);
+}
+
+h2, h3, h4, h5, h6 {
+  @include padding-top(1);
+  color: $base-color;
+}
+
+.main {
+  max-width: 80rem;
+  margin: 0 auto;
+  background-color: $background-color;
+}
+
+.policy {
+  h1 {
+    @include font-size($h3);
+    font-style: italic;
+    span {
+      font-style: normal;
+      color: $body-color;
+      display: block;
+      @include padding(1 0);
+    }
+  }
+}
+
+nav {
+  background-color: $body-color;
+  header {
+    @include padding(1);
+    background-color: $base-color;
+    height: 2rem;
+    img {
+      height: 60%;
+      vertical-align: center;
+    }
+  }
+  ul {
+    @include padding(0);
+    li {
+      list-style: none;
+      height: 100%;
+      display: inline-block;
+      margin: 0;
+      a {
+        display: inline-block;
+        @include padding(1);
+        color: $background-color;
+        &:hover {
+          background-color: lighten($body-color, 15%);
+          color: $background-color;
+        }
+      }
+    }
+  }
+}
+
+ul {
+  @include padding-top(1);
+  li {
+    @include margin(0 1);
+    ul {
+      @include padding-top(0);
+      li {
+      @include margin(0 1);
+      }
+    }
+  }
+}
+
+.breadcrumb {
+  @include padding(1 0 0 1);
+}
+
+section {
+  @include padding(0 1);
+  p {
+    @include padding-top(1);
+    & + p {
+      text-indent: 0;
+    }
+  }
+  .description {
+    @include font-size($h2);
+  }
+}
+
+footer {
+  color: $background-color;
+  background-color: $body-color;
+  @include padding(1);
+  @include margin-top(2);
+}

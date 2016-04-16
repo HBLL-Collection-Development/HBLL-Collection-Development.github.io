@@ -1,0 +1,14 @@
+{
+  "name": "jaredhowland/rhythm",
+  "description": "Sass files to create mobile-first responsive websites with vertical rhythm based on modular scales",
+  "keywords": ["vertical","rhythm","scss","sass","modular-scale","responsive","mobile-first"],
+  "homepage": "http://github.com/jaredhowland/rhythm",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jared Howland",
+      "homepage": "http://jaredhowland.com",
+      "role": "developer"
+    }
+  ]
+}
