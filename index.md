@@ -29,7 +29,7 @@ The Collection Development Philosophy is intended to guide the work of subject l
 
 ## Note 1
 
-At the present time the Library collects at the comprehensive Level in the following areas:
+At the present time the Library collects at the Comprehensive Level in the following areas:
 
 * Mormonism
 * Literature

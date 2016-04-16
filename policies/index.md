@@ -8,13 +8,11 @@ title: Collection Development Policies
 <h1>Funds</h1>
 
 
-{% capture posts %}{% for post in site.posts %}|{{ post.title }}#{{ post.url }}{% endfor %}{% endcapture %}
+{% capture posts %}{% for post in site.posts %}{% unless forloop.first %}|{% endunless %}{{ post.title }}#{{ post.url }}{% endfor %}{% endcapture %}
 {% assign sortedposts = posts | split: '|' | sort %}
 <ul>
 {% for post in sortedposts %}{% assign postitems = post | split: '#' %}
-  {% if postitems != "" %}
-  <li><a href="{{ postitems[1] }}">{{ postitems[0] }}</a></li>
-  {% endif %}
+  <li><a href="{{ site.github.url }}{{ postitems[1] }}">{{ postitems[0] }}</a></li>
 {% endfor %}
 </ul>
 
@@ -28,10 +26,12 @@ title: Collection Development Policies
 <div class="tag">
   <a class="anchor" id="{{ slug }}"></a>
   <h3>{{ tag }}</h3>
+  {% capture posts %}{% for post in site.tags[tag] %}{% unless forloop.first %}|{% endunless %}{{ post.title }}#{{ post.url }}{% endfor %}{% endcapture %}
+  {% assign sortedposts = posts | split: '|' | sort %}
   <ul>
-    {% for post in site.tags[tag] %}
-    <li><a href="{{post.url}}">{{post.title}}</a></li>
-    {% endfor %}
+  {% for post in sortedposts %}{% assign postitems = post | split: '#' %}
+    <li><a href="{{ site.github.url }}{{ postitems[1] }}">{{ postitems[0] }}</a></li>
+  {% endfor %}
   </ul>
 </div>
 {% endfor %}

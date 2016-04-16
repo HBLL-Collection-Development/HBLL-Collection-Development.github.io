@@ -3,29 +3,29 @@
 $breakpoints: (
   bp-0: (
     breakpoint: 0px, // Mobile first
-    font-size: 12px,
+    font-size: 14px,
     line-height: 1.5,
     modular-scale: golden
   ),
   bp-1: (
     breakpoint: 480px, // ~ Extra small screen up
-    font-size: 12px,
+    font-size: 14px,
     line-height: 1.5,
     modular-scale: golden
   ),
   bp-2: (
     breakpoint: 768px, // ~ Small screen/tablet up
-    font-size: 14px,
+    font-size: 16px,
     modular-scale: golden // no line-height specified so scale is used
   ),
   bp-3: (
     breakpoint: 992px, // ~ Medium screen up
-    font-size: 16px,
+    font-size: 18px,
     modular-scale: golden // no line-height specified so modular-scale is used
   ),
   bp-4: (
     breakpoint: 1200px, // ~Desktop up
-    font-size: 18px,
+    font-size: 20px,
     modular-scale: golden // no line-height specified so modular-scale is used
   )
 ) !default;
