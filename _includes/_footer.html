@@ -1,4 +1,4 @@
 <footer>
   <p>&copy; 2016 Brigham Young University</p>
-  {% if page.last-updated %}<p>Last updated {{ page.last-updated }}</p>{% endif %}
+  {% if page.is_post %}<p>Last updated {{ page.date | date: "%-d %B %Y" }}</p>{% endif %}
 </footer>

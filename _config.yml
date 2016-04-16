@@ -11,6 +11,7 @@ compress_html:
 
 gems:
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 sass:
   style: :compressed
@@ -27,3 +28,4 @@ defaults:
     values:
       layout: "policy"
       permalink: /policies/:title/
+      is_post: true
