@@ -54,6 +54,9 @@ h1 {
 
 h2 {
   @include font-size($h3);
+  color: $body-color;
+  font-style: italic;
+
 }
 
 h3 {
