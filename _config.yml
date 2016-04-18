@@ -26,6 +26,6 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "policy"
+      layout: "default"
       permalink: /policies/:title/
       is_post: true

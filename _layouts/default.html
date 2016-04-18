@@ -20,8 +20,12 @@ layout: compress
 </head>
 
 <body>
-  <div class="main">
+
+    <div class="main{% if page.is_post %} policy{% endif %}">
+
     {% include _nav.html %}
+
+    {% if page.is_post %}<p class="breadcrumb"><a href="{{ site.github.url }}/policies">&larr; Back</a></p>{% endif %}
 
     <section>{{ content }}</section>
 
