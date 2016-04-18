@@ -115,11 +115,11 @@ nav {
   }
 }
 
-ul {
+ul, ol {
   @include padding-top(1);
   li {
     @include margin(0 1);
-    ul {
+    ul, ol {
       @include padding-top(0);
       li {
       @include margin(0 1);
