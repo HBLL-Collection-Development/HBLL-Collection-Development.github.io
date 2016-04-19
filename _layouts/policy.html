@@ -1,0 +1,50 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name='robots' content='noindex,follow'/>
+  {% if page.custom-fund and page.custom-fund-name %}
+    <title>{{ page.custom-fund }}&mdash;{{ page.custom-fund-name }}</title>
+  {% elsif page.fund and page.fund-name %}
+    <title>{{ page.fund }}&mdash;{{ page.fund-name }}</title>
+  {% elsif page.title %}
+    <title>{{ page.title }}</title>
+  {% else %}
+    <title>{{ site.title }}</title>
+  {% endif %}
+  <link rel="stylesheet" type="text/css" href="{{ site.github.url }}/assets/styles/styles.css" media="screen">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" href="{{ site.github.url }}/favicon.ico?v=1">
+	<link rel="apple-touch-icon" href="{{ site.github.url }}/apple-touch-icon.png">
+	<link rel="apple-touch-icon-precomposed" href="{{ site.github.url }}/apple-touch-icon.png">
+</head>
+
+<body>
+
+    <div class="main policy">
+
+    {% include _nav.html %}
+
+    <p class="breadcrumb"><a href="{{ site.github.url }}/policies">&larr; Back</a></p>
+    <section>
+      {% if page.custom-fund and page.custom-fund-name %}
+        <h1><span>{{ page.custom-fund }}</span> {{ page.custom-fund-name }} <span>{{ page.tags | join: ' & ' }}</span></h1>
+      {% else %}
+        <h1><span>Fund {{ page.fund }}</span> {{ page.fund-name }} <span>{{ page.tags | join: ' & ' }}</span></h1>
+      {% endif %}
+      {% if page.file-name %}
+        <p><a href="{{ site.github.url }}/assets/files/{{ page.file-name }}">Download (Word)</a></p>
+      {% endif %}
+
+      {{ content }}
+
+    </section>
+
+    {% include _footer.html %}
+  </div>
+</body>
+</html>
