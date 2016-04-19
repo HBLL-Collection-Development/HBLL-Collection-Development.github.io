@@ -7,7 +7,9 @@ layout: compress
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name='robots' content='noindex,follow'/>
-  {% if page.title %}
+  {% if page.fund and page.fund-name %}
+    <title>{{ page.fund }}&mdash;{{ page.fund-name }}</title>
+  {% elsif page.title %}
     <title>{{ page.title }}</title>
   {% else %}
     <title>{{ site.title }}</title>
@@ -25,9 +27,22 @@ layout: compress
 
     {% include _nav.html %}
 
-    {% if page.is_post %}<p class="breadcrumb"><a href="{{ site.github.url }}/policies">&larr; Back</a></p>{% endif %}
-
-    <section>{{ content }}</section>
+    {% if page.is_post %}
+      <p class="breadcrumb"><a href="{{ site.github.url }}/policies">&larr; Back</a></p>
+      <section>
+        {% if page.custom-fund and page.custom-fund-name %}
+          <h1><span>{{ page.custom-fund }}</span> {{ page.custom-fund-name }} <span>{{ page.tags | join: ' & ' }}</span></h1>
+        {% else %}
+          <h1><span>Fund {{ page.fund }}</span> {{ page.fund-name }} <span>{{ page.tags | join: ' & ' }}</span></h1>
+        {% endif %}
+        {% if page.file-name %}
+          <p><a href="{{ site.github.url }}/assets/files/{{ page.file-name }}">Download (Word)</a></p>
+        {% endif %}
+        {{ content }}
+      </section>
+    {% else %}
+      <section>{{ content }}</section>
+    {% endif %}
 
     {% include _footer.html %}
   </div>
