@@ -1,16 +1,14 @@
 ---
-title: 34131&mdash;Germanic and General European Studies
+fund: 34131
+fund-name: Germanic and General European Studies
+file-name: 34131 Germanic and General European Studies.docx
 tags:
-  - Richard Hacken
+ - Richard Hacken
 ---
 
 {% comment %}
 http://word-to-markdown.herokuapp.com
 {% endcomment %}
-
-# <span>Fund 34131</span> Germanic and General European Studies <span>Richard Hacken</span>
-
-[Download (Word)]({{ site.github.url }}/assets/files/34131 Germanic and General European Studies.docx)
 
 ## Overview
 
@@ -28,7 +26,7 @@ The library seeks to support research and teaching through targeted acquisitions
 - Bachelor of Arts in German Studies: Teaching Level
 - Master of Arts in Comparative Studies: Teaching Level
 
-## Departments/Disciplines/Programs/Subject Areas
+## Departments/<wbr/>Disciplines/<wbr/>Programs/<wbr/>Subject Areas
 
 The Germanic and General European Studies collections also reflect the interests of the following departments and programs:
 

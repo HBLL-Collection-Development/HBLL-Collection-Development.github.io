@@ -75,21 +75,15 @@ h4 {
   color: lighten($body-color, 10%);
 }
 
-.main {
-  max-width: 80rem;
-  margin: 0 auto;
-  background-color: $background-color;
-}
-
-.policy {
-  h1 {
-    @include font-size($h3);
-    font-style: italic;
-    span {
-      font-style: normal;
-      color: $body-color;
-      display: block;
-      @include padding(1 0);
+ul, ol {
+  @include padding-top(1);
+  li {
+    @include margin(0 1);
+    ul, ol {
+      @include padding-top(0);
+      li {
+      @include margin(0 1);
+      }
     }
   }
 }
@@ -101,7 +95,8 @@ nav {
     background-color: $base-color;
     height: 2rem;
     img {
-      height: 60%;
+      height: 70%;
+      max-width: 100%;
       vertical-align: center;
     }
   }
@@ -125,23 +120,6 @@ nav {
   }
 }
 
-ul, ol {
-  @include padding-top(1);
-  li {
-    @include margin(0 1);
-    ul, ol {
-      @include padding-top(0);
-      li {
-      @include margin(0 1);
-      }
-    }
-  }
-}
-
-.breadcrumb {
-  @include padding(1 0 0 1);
-}
-
 section {
   @include padding(0 1);
   p {
@@ -156,8 +134,60 @@ section {
 }
 
 footer {
+  clear: both;
   color: $background-color;
   background-color: $body-color;
   @include padding(1);
   @include margin-top(2);
+}
+
+.main {
+  max-width: 80rem;
+  margin: 0 auto;
+  background-color: $background-color;
+}
+
+.policy {
+  h1 {
+    @include font-size($h3);
+    font-style: italic;
+    span {
+      font-style: normal;
+      color: $body-color;
+      display: block;
+      @include padding(1 0);
+    }
+  }
+}
+
+.breadcrumb {
+  @include padding(1 0 0 1);
+}
+
+/* Two-column grid: http://www.sitepoint.com/easy-responsive-css-grid-layouts/ */
+@media all and ( min-width: 768px ) {
+  section {
+    .col {
+      @include padding-bottom(2);
+      h1 {
+        @include font-size($h2);
+      }
+      ul {
+        @include padding-top(0);
+      }
+      float: left;
+      width: 50%;
+    }
+    .small {
+      display: none;
+    }
+    #funds, #librarians {
+      h1 {
+        @include padding-bottom(1);
+      }
+      h3.first {
+        @include padding-top(0);
+      }
+    }
+  }
 }
