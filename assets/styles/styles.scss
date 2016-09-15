@@ -93,10 +93,11 @@ nav {
   header {
     @include padding(1);
     background-color: $base-color;
-    height: 2rem;
+    height: 1rem;
     img {
       height: 70%;
       max-width: 100%;
+      max-height: 1em;
       vertical-align: center;
     }
   }

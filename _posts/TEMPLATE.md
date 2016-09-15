@@ -26,7 +26,7 @@ The library seeks to support research and teaching through targeted acquisitions
 - Bachelor of Arts in German Studies: Teaching Level
 - Master of Arts in Comparative Studies: Teaching Level
 
-## Departments/<wbr/>Disciplines/<wbr/>Programs/<wbr/>Subject Areas
+## Departments/Disciplines/Programs/Subject Areas
 
 The Germanic and General European Studies collections also reflect the interests of the following departments and programs:
 

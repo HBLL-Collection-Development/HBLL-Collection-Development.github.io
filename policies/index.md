@@ -19,7 +19,7 @@ title: Collection Development Policies
       {% unless forloop.first %}|{% endunless %}{{ post.fund }}&mdash;{{ post.fund-name }}#{{ post.url }}
     {% endfor %}
   {% endcapture %}
-  {% assign sortedposts = posts | split: '|' | sort %}
+  {% assign sortedposts = posts | lstrip | split: '|' | sort %}
   <ul>
   {% for post in sortedposts %}{% assign postitems = post | split: '#' %}
     <li><a href="{{ site.github.url }}{{ postitems[1] }}">{{ postitems[0] }}</a></li>
