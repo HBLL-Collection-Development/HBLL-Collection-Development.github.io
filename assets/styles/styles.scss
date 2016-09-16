@@ -129,6 +129,10 @@ section {
       text-indent: 0;
     }
   }
+  td {
+    text-align: center;
+    @include padding(.5, true);
+  }
   .description {
     @include font-size($h2);
   }
