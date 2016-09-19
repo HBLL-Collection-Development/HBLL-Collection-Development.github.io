@@ -13,9 +13,6 @@ gems:
   - jekyll-sitemap
   - jekyll-redirect-from
 
-whitelist:
-  - jekyll-redirect-from
-
 sass:
   style: :compressed
 
