@@ -7,7 +7,7 @@ tags:
 ---
 
 {% comment %}
-http:/<wbr>/<wbr>word-to-markdown.herokuapp.com
+http://word-to-markdown.herokuapp.com
 {% endcomment %}
 
 ## Overview
