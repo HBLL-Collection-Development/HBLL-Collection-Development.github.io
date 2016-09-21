@@ -169,6 +169,13 @@ footer {
   @include padding(1 0 0 1);
 }
 
+.muted {
+  @include font-size(1rem);
+  @include padding(0);
+  @include margin-top(-1);
+  font-style: italic!important;
+}
+
 /* Two-column grid: http://www.sitepoint.com/easy-responsive-css-grid-layouts/ */
 @media all and ( min-width: 768px ) {
   section {

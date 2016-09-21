@@ -32,9 +32,9 @@ layout: compress
     <p class="breadcrumb"><a href="{{ site.github.url }}/policies">&larr; Back</a></p>
     <section>
       {% if page.custom-fund and page.custom-fund-name %}
-        <h1><span>{{ page.custom-fund }}</span> {{ page.custom-fund-name }} <span>{{ page.tags | join: ' & ' }}</span></h1>
+        <h1><span>{{ page.custom-fund }}</span> {{ page.custom-fund-name }} <span>{{ page.tags | join: ' & ' }}</span><span class="muted">Last updated {{ page.date | date: "%-d %B %Y" }}</span></h1>
       {% else %}
-        <h1><span>Fund {{ page.fund }}</span> {{ page.fund-name }} <span>{{ page.tags | join: ' & ' }}</span></h1>
+        <h1><span>Fund {{ page.fund }}</span> {{ page.fund-name }} <span>{{ page.tags | join: ' & ' }}</span><span class="muted">Last updated {{ page.date | date: "%-d %B %Y" }}</span></h1>
       {% endif %}
       {% if page.file-name %}
         <p><a href="{{ site.github.url }}/assets/files/{{ page.file-name }}">Download (Word)</a></p>
