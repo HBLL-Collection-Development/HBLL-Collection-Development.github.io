@@ -110,7 +110,7 @@ nav {
       margin: 0;
       a {
         display: inline-block;
-        @include padding(0.5, true);
+        @include padding(0.5 1, true);
         color: $background-color;
         &:hover {
           background-color: lighten($body-color, 15%);
