@@ -215,3 +215,9 @@ sup {
     }
   }
 }
+
+@media print {
+   nav, .breadcrumb, footer {
+    display: none;
+   }
+}
