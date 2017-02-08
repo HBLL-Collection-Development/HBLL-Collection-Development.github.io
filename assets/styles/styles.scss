@@ -217,7 +217,7 @@ sup {
 }
 
 @media print {
-   nav, .breadcrumb, footer {
-    display: none;
+   nav, header, .breadcrumb, footer {
+     display:none;
    }
 }
