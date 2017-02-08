@@ -50,11 +50,13 @@ h1 {
   color: $accent-color;
   @include padding-top(1);
   @include font-size($h2);
+  clear: both;
 }
 
 h2, h3, h4, h5, h6 {
   @include padding-top(1);
   color: $base-color;
+  clear: both;
 }
 
 h2 {
