@@ -217,7 +217,6 @@ sup {
 }
 
 @media print {
-   nav, header, .breadcrumb, footer {
-     display:none;
-   }
+  body { font-size: 10pt }
+  nav, header, .breadcrumb, footer { display: none }
 }
