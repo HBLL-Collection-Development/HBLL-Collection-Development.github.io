@@ -218,5 +218,5 @@ sup {
 
 @media print {
   body { font-size: 10pt }
-  nav, header, .breadcrumb, footer { display: none }
+  nav, header, .breadcrumb, footer { display: none!important }
 }
