@@ -217,6 +217,24 @@ sup {
 }
 
 @media print {
-  body { font-size: 10pt }
-  nav, header, .breadcrumb, footer { display: none!important }
+  * {
+    line-height: 1.2rem;
+  }
+  body, h2, h3, h4 {
+    @include font-size(.8rem);
+  }
+  header, nav, .breadcrumb, footer, .file {
+    display: none;
+  }
+  .policy {
+      h1 {
+        @include font-size($h4);
+        font-style: italic;
+        span {
+          font-style: normal;
+          color: $body-color;
+          display: block;
+        }
+      }
+    }
 }

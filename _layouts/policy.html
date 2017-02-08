@@ -16,7 +16,7 @@ layout: compress
   {% else %}
     <title>{{ site.title }}</title>
   {% endif %}
-  <link rel="stylesheet" type="text/css" href="{{ site.github.url }}/assets/styles/styles.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="{{ site.github.url }}/assets/styles/styles.css">
 	<meta name="mobile-web-app-capable" content="yes">
 	<link rel="shortcut icon" href="{{ site.github.url }}/favicon.ico?v=1">
 	<link rel="apple-touch-icon" href="{{ site.github.url }}/apple-touch-icon.png">
@@ -37,7 +37,7 @@ layout: compress
         <h1><span>Fund {{ page.fund }}</span> {{ page.fund-name }} <span>{{ page.tags | join: ' & ' }}</span> <span class="muted">Last updated {{ page.date | date: "%-d %B %Y" }}</span></h1>
       {% endif %}
       {% if page.file-name %}
-        <p><a href="{{ site.github.url }}/assets/files/{{ page.file-name }}">Download (Word)</a></p>
+        <p class="file"><a href="{{ site.github.url }}/assets/files/{{ page.file-name }}">Download (Word)</a></p>
       {% endif %}
 
       {{ content }}
