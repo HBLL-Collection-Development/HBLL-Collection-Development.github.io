@@ -188,6 +188,10 @@ sup {
   font-style: italic !important;
 }
 
+.img-responsive {
+  max-width: 90%;
+}
+
 /* Two-column grid: http://www.sitepoint.com/easy-responsive-css-grid-layouts/ */
 @media all and ( min-width: 768px ) {
   section {
