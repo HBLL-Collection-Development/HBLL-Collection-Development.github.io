@@ -108,15 +108,6 @@ marissa-bischoff:
   email: marissa_bischoff@byu.edu
   office: 3445 HBLL
 
-rebecca-boughan:
-  first-name: Rebecca
-  last-name: Walton
-  position: Continuations, Licensing, and Collection Analysis Librarian
-  department: Material Acquisitions
-  phone: (801) 422-3670
-  email: rebecca_walton@byu.edu
-  office: 2128 HBLL
-
 janet-bradford:
   first-name: Janet
   last-name: Bradford
@@ -1428,6 +1419,15 @@ brian-wages:
   email: brian_wages@byu.edu
   office: 1204 HBLL
 
+rebecca-walton:
+  first-name: Rebecca
+  last-name: Walton
+  position: Continuations, Licensing, and Collection Analysis Librarian
+  department: Material Acquisitions
+  phone: (801) 422-3670
+  email: rebecca_walton@byu.edu
+  office: 2128 HBLL
+
 virginia-watson:
   first-name: Virginia
   last-name: Watson
@@ -1529,15 +1529,6 @@ john-wright:
   email: john_wright@byu.edu
   office: 6723 HBLL
 
-kristi-young:
-  first-name: Kristi
-  last-name: Young
-  position: Folklore Archivist
-  department: Special Collections
-  phone: (801) 422-6041
-  email: kristi_young@byu.edu
-  office: 1160 HBLL
-
 holt-zaugg:
   first-name: Holt
   last-name: Zaugg
@@ -1546,13 +1537,3 @@ holt-zaugg:
   phone: (801) 422-4178
   email: holt_zaugg@byu.edu
   office: 5439 HBLL
-
-peter-zuber:
-  first-name: Peter
-  last-name: Zuber
-  position: Science & Maps Dept Chair & Engineering Librarian
-  department: Science & Maps
-  phone: (801) 422-6011
-  email: peter_zuber@byu.edu
-  office: 2321 HBLL
-  subjects: Computer Engineering, Electrical Engineering, Industrial Design, Manufacturing Engineering Technology, Mechanical Engineering, Technology & Engineering Education
