@@ -13,7 +13,7 @@ Librarians develop collections by selecting material to add or withdraw in assig
 
 When making decisions about acquisitions and retention, librarians apply their subject expertise and professional experience, as well as consulting recognized sources of library and industry information. The Library invites recommendations for needed resources from students, faculty, and employees and incorporates patron demand-driven and evidence-based acquisition models into its resource selection process.
 
-## General and Special collections
+## General and Special Collections
 
 All Library collections fall into one of two categories: general or special. Only rare or particularly valuable materials that meet the parameters of relevant collection development policies are included in special collections, which provides increased security and preservation. In unusual cases, as specified in collection development policies, materials that would normally be housed in general collections may be included in special collections.
 
