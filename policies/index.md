@@ -5,13 +5,7 @@ title: Collection Development Policies
   https://github.com/kelsin/kelsin.github.io/blob/master/tags/index.html
 {% endcomment %}
 
-<h1 class="small">Table of Contents</h1>
-<ol class="small">
-  <li><a href="#funds">Policies by Fund Code</a></li>
-  <li><a href="#librarians">Policies by Librarian Name</a></li>
-</ol>
-
-<div class="col" id="funds" name="funds">
+<div id="funds" name="funds">
   <h1>Fund Code</h1>
 
   {% capture posts %}
